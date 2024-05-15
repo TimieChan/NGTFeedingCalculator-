@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeding Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Navbar Section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+        <a href="#Home" id="navbar__logo">FEEDING CALCULATOR</a> 
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="#Calculator" class="navbar__links" id="calculator-page">Calculator</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#Algorithm" class="navbar__links" id="algorithm-page">Algorithm</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Hero Section-->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">Your Second <span>Checker</span></h1>
+            <p class="hero__description">Made Easy</p>
+        </div>
+    </div>
+
+    <!--Calculator Section-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <form id="feedingForm">
+                <label for="aspirates">Volume of Aspirates (ml):</label>
+                <input type="number" id="aspirates" name="aspirates" required>
+    
+                <label for="milkFeeds">Amount of Milk Feeds (ml):</label>
+                <input type="number" id="milkFeeds" name="milkFeeds" required>
+    
+                <label for="waterFlushes">Amount of Water Flushes (ml):</label>
+                <input type="number" id="waterFlushes" name="waterFlushes" required>
+    
+                <div class="question">Was previous aspirates &lt;200mls?</div>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="previousAspirates" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="previousAspirates" value="no">
+                    <label for="no">No</label>
+                </div>
+
+                <button type="submit">Calculate</button>
+            </form>
+    
+            <div id="results">
+                <h2>Results</h2>
+                <p id="milkOutput">Milk Feeds: </p>
+                <p id="waterFlushesOutput">Water Flushes: </p>
+                <p id="aspiratesOutput">Aspirates to Feed Back: </p>
+            </div>
+        </div>
+    
+        <script src="app.js"></script>
+    </body>
+    </html>
+    
